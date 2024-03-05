@@ -15,29 +15,29 @@
         <main id="calculadora" class="calculadora">
             <h1>Calculadora</h1>
             <div id="resultado" class="resultado">
-                <input id="visor" type="text">
+                <!-- <input id="visor" href="#visor" type="text"> -->
             </div>
             <section id="operadores" class="operadores">
-                <button id="divisao">/</button>
-                <button id="multiplicacao">X</button>
-                <button id="subtracao">-</button>
-                <button id="soma">+</button>
-                <button id="resultado">=</button>
+                <button onclick="insert('/')" id="divisao">/</button>
+                <button onclick="insert('*')" id="multiplicacao">X</button>
+                <button onclick="insert('-')" id="subtracao">-</button>
+                <button onclick="insert('+')" id="soma">+</button>
+                <button class="clean" onclick="clean()" id="reset">C</button>
+                
             </section>
             <section  id="numeral" class="numeral">
-                <button id="primeiro">1</button>
-            <button id="segundo">2</button>
-            <button id="terceiro">3</button>
-            <button id="quarto">4</button>
-            <button id="quinto">5</button>
-            <button id="sexto">6</button>
-            <button id="setimo">7</button>
-            <button id="oitavo">8</button>
-            <button id="nono">9</button>
-            <button id="nulo">0</button>
-            <button id="virgula">,</button>
-            <button id="reset">C</button>
-            
+                <button onclick="insert('1')" id="primeiro">1</button>
+                <button onclick="insert('2')" id="segundo">2</button>
+                <button onclick="insert('3')" id="terceiro">3</button>
+                <button onclick="insert('4')" id="quarto">4</button>
+                <button onclick="insert('5')" id="quinto">5</button>
+                <button onclick="insert('6')" id="sexto">6</button>
+                <button onclick="insert('7')" id="setimo">7</button>
+                <button onclick="insert('8')" id="oitavo">8</button>
+                <button onclick="insert('9')" id="nono">9</button>
+                <button onclick="insert('0')" id="nulo">0</button>
+                <button onclick="insert(',')" id="virgula">,</button>
+                <button id="operador" onclick="somar()" id="resultado">=</button>
         </section>
     </section>
     </main>
