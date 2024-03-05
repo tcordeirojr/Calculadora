@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
-    
-    <main id="calculadora" class="calculador">
-        <div class="resultado">
-            <input type="text">
-            <button id="resultado">=</button>
-        </div>
-        <section id="operadores" class="operadores">
-            <button id="divisao">/</button>
-            <button id="multiplicacao">X</button>
-            <button id="subtracao">-</button>
-            <button id="soma">+</button>
-        </section>
-        <section class="numeral">
-            <button id="primeiro">1</button>
+    <section class="calculator">
+
+        <main id="calculadora" class="calculadora">
+            <h1>Calculadora</h1>
+            <div id="resultado" class="resultado">
+                <input id="visor" type="text">
+            </div>
+            <section id="operadores" class="operadores">
+                <button id="divisao">/</button>
+                <button id="multiplicacao">X</button>
+                <button id="subtracao">-</button>
+                <button id="soma">+</button>
+                <button id="resultado">=</button>
+            </section>
+            <section  id="numeral" class="numeral">
+                <button id="primeiro">1</button>
             <button id="segundo">2</button>
             <button id="terceiro">3</button>
             <button id="quarto">4</button>
@@ -31,8 +37,10 @@
             <button id="nulo">0</button>
             <button id="virgula">,</button>
             <button id="reset">C</button>
-
+            
         </section>
+    </section>
     </main>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
